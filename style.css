@@ -1,0 +1,20 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+body{
+    background-color: #2d2d2d;
+}
+#cuerpo{
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+h1{
+    color: darkgreen;
+}
+h2{
+    color: darkblue;
+    text-decoration: underline;
+}

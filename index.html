@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pr&#225;ctica Squid</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="cuerpo">
+        <div>
+            <div>
+                <h1>Pr&#225;ctica Squid</h1>
+                <br>
+                <p>
+                    <a href="#a0"> Instalaci&#243;n</a>
+                    <br>
+                    <a href="#a1">Apartado 1</a>
+                    <br>
+                    <a href="#a2">Apartado 2</a>
+                    <br>
+                    <a href="#a3">Apartado 3</a>
+                    <br>
+                    <a href="#a4">Apartado 4</a>
+                    <br>
+                    <a href="#a5">Apartado 5</a>
+
+                </p>
+
+            </div>
+        </div>
+        <br>
+        <div>
+            <h2 id="a0">Instalaci&#243;n</h2>
+            <p>
+                Descargamos squid y confirmamos que est&#225; funcionando
+                <br>
+                <img src="./imgs/I1.png" alt="foto1">
+                <br>
+                <img src="./imgs/I2.png" alt="foto2">
+            </p>
+            <p>
+                <br>
+                <b>Configuraci&#243;n</b>
+                <br>
+                Nos dirigimos a la ruta /etc/squid/ y lo primero va a ser hacer una copia del archivo squid.conf.
+                Esto har&#225; que tengamos una copia por si hay alg&#250;n error en las configuraciones que hagamos
+                durante la pr&#225;ctica
+                <br>
+                <img src="./imgs/I3.png" alt="foto3">
+            </p>
+            <br>
+            <p>
+                Comprobamos el puerto de escucha de squid
+                <br>
+                <img src="./imgs/I4.png" alt="foto4">
+            </p>
+            <br>
+            <p>
+                Habilitamos el puerto en cuesti&#243;n
+                <br>
+                <img src="./imgs/I5.png" alt="foto5">
+            </p>
+            <br>
+            <p>
+                Y como lo que queremos en esta pr&#225;ctica es denegar sitios concretos, comentamos la l&#237;nea
+                de denegar y la cambiamos por aceptar
+                <br>
+                <img src="./imgs/unnameI6.png" alt="foto6">
+                <br>
+                <img src="./imgs/I7.png" alt="foto7">
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2 id="a1">Apartado 1</h2>
+            <p>
+                <b>
+                    Crear una ACL llamada &quot;redes_sociales&quot; que incluye los dominios de las redes sociales
+                    que queremos restringir. Denegar tiktok e instagram. Incluir pantallazo de la configuraci&#243;n
+                    y de la prueba (2 puntos).
+                </b>
+            </p>
+            <br>
+            <p>
+                Archivo de configuraci&#243;n para el ejercicio:
+                <br>
+                <img src="./imgs/a1_1.png" alt="foto8">
+            </p>
+            <br>
+            <p>
+                Comprobamos que los sitios determinados son inaccesibles
+                <br>
+                <img src="./imgs/a1_2.png" alt="foto9">
+                <br>
+                <img src="./imgs/a1_3.png" alt="foto10">
+            </p>
+
+        </div>
+        <br>
+        <div>
+            <h2 id="a2">Apartado 2</h2>
+            <p>
+                <b>
+                    Crear una ACL llamada &quot;horas_laborables&quot; que establece el rango horario de 9:00
+                    a.m. a 5:00 p.m. de lunes a viernes. Incluir pantallazo de la configuraci&#243;n y de
+                    la
+                    prueba. (2 puntos)
+
+                </b>
+            </p>
+            <br>
+            <p>
+                Archivo de configuraci&#243;n para el ejercicio:
+                <br>
+                <img src="./imgs/a2_1.png" alt="foto11">
+
+            </p>
+            <br>
+            <p>
+                Comprobamos que no nos deja acceder
+                <br>
+                <img src="./imgs/a2_2.png" alt="foto12">
+                <br>
+                <img src="./imgs/a2_3.png" alt="foto13">
+            </p>
+            <br>
+            <p>
+                Cambiamos hora tanto del cliente como del servidor y comprobamos que nos deja
+                <br>
+                <img src="./imgs/a2_4.png" alt="foto13">
+                <br>
+                <img src="./imgs/a2_5.png" alt="foto14">
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2 id="a3">Apartado 3</h2>
+            <p>
+                <b>
+                    Configuraci&#243;n de la autenticaci&#243;n de squid con NCSA. Crear un usuario
+                    con
+                    tu
+                    nombre y configurar el navegador para la
+                    autenticaci&#243;n.
+                    https://wiki.squid-cache.org/ConfigExamples/Authenticate/Ncsa. Incluir
+                    pantallazo de
+                    la configuraci&#243;n y de la prueba. (2 puntos)
+                </b>
+            </p>
+            <br>
+            <p>
+                Creo un usuario para a&#241;adirlo posteriormente al fichero y poder acceder
+                <br>
+                <img src="./imgs/a3_1.png" alt="foto15">
+                <br>
+                <img src="./imgs/a3_2.png" alt="foto16">
+            </p>
+            <br>
+            <p>
+                L&#237;neas a a&#241;adir en el archivo de configuraci&#243;n para el ejercicio:
+                <br>
+                <img src="./imgs/a3_3.png" alt="foto17">
+            </p>
+            <br>
+            <p>
+                Comprobamos que el usuario y contrase&#241;a funciona y podemos navegar
+                <br>
+                <img src="./imgs/a3_4.png" alt="foto18">
+                <br>
+                <img src="./imgs/a3_5.png" alt="foto19">
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2 id="a4">Apartado 4</h2>
+            <p>
+                <b>
+                    Configuraci&#243;n de la autenticaci&#243;n de squid con LDAP. Crear un usuario
+                    con
+                    tu
+                    nombre y configurar el navegador para
+                    la
+                    autenticaci&#243;n.https://wiki.squid-cache.org/ConfigExamples/Authenticate/Ldap.
+                    Incluir
+                    pantallazo de la configuraci&#243;n y de la prueba. (2 puntos)
+
+                </b>
+            </p>
+            <br>
+            <p>
+                Archivo configuraci&#243;n para el ejercicio:
+                <br>
+                <img src="./imgs/a4_1.png" alt="foto20">
+            </p>
+            <br>
+            <p>
+                Uso el usuario con el que hago todas las pr&#225;cticas y comprobamos que nos deja navegar
+                <br>
+                <img src="./imgs/a4_2.png" alt="foto21">
+                <br>
+                <img src="./imgs/a4_3.png" alt="foto22">
+            </p>
+        </div>
+        <br>
+        <div>
+            <h2 id="a5">Apartado 5</h2>
+            <p>
+                <b>
+                    Una vez subido el pdf a la entrega, ser&#225; necesario convertir el pdf en html y
+                    crear una
+                    p&#225;gina web en github. De esa forma tendremos una p&#225;gina en git para
+                    nuestro
+                    CV que
+                    incluya un manual de uso de SQUID. Ser&#225; necesario incluir la URL de nuestro
+                    GIT.
+                    (2
+                    puntos)
+                </b>
+            </p>
+            <br>
+            <p>
+                aitorramos.github.io/practica_sad/
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>
