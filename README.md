@@ -2,7 +2,7 @@
 [!INFO]
 Esto es una práctica sobre el uso de SQUID.
 
-[!IMPORTANT]
+[!CAUTION]
 Está pendiente de evaluarse y puede contener errores. Trás ser evaluada se procederá a la corrección de dicha práctica.
 
 [!TIP]
