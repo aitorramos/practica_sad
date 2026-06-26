@@ -1,5 +1,11 @@
+# practica_sad
 
+> [!IMPORTANT]
+Esto es una práctica sobre el uso de SQUID.
 
-> [!NOTE]
-Recuerda tener tu servidor y la herramienta docker perfectamente actualizado a la ultima versión disponible.
+> [!CAUTION]
+Está pendiente de evaluarse y puede contener errores. Trás ser evaluada se procederá a la corrección de dicha práctica.
+
+> [!TIP]
+Gracias por su visualización, seguré creciendo y mejorando.
 
